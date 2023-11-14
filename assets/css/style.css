@@ -9,10 +9,18 @@
 html {
     font-family: "nunito" , sans-serif;
     max-width: 75%;
+     background-color: #fecd45;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(33, 33, 121);
 }
 
 .game-area {
     display: flex;
+    flex-direction: row;
     gap: 5rem;
 }
 
@@ -27,6 +35,14 @@ html {
     justify-content: center;
     align-items: center;
     border: 2px solid;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 1.5rem;
+    background-color: rgb(212, 230, 210);
+}
+
+.score-area {
+    color: #fff;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
 }
