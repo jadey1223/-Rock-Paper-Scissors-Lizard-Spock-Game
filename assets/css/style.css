@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "nunito" , sans-serif;
+    max-width: 75%;
+}
+
+.game-area {
+    display: flex;
+    gap: 5rem;
+}
+
+.btn--rock,
+.btn--paper,
+.btn--scissors,
+.btn--spock,
+.btn--lizard
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
