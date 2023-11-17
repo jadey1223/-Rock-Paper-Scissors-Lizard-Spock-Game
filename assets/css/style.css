@@ -18,50 +18,48 @@ html {
     color: rgb(33, 33, 121);
 }
 
-.game-area {
+#game-area {
     display: flex;
     flex-direction: row;
     gap: 5rem;
 }
 
-.btn--rock,
-.btn--paper,
-.btn--scissors,
-.btn--spock,
-.btn--lizard
- {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 1.5rem;
-    background-color: rgb(212, 230, 210);
-}
 
-.score-area {
+
+#score-area {
     color: #fff;
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
-.player-hand {
+#player-hand {
     width: 200px;
     height: 200px;
     background-color: aqua;
     margin-top: 4rem;
 }
 
-.computer-hand {
+#computer-hand {
     width: 200px;
     height: 200px;
     background-color: aqua;
     margin-top: 4rem; 
 }
 
-.hands {
+#hands {
     display: flex;
     justify-content: space-around;
     margin-left: 3rem;
+}
+
+#choices {
+
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+#choices img {
+    width: 64px;
+    height: 64px;
 }
