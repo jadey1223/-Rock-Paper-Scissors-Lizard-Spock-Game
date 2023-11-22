@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/css/js/script.js"></script>
+    
     <title> Rock, Paper, Scissors, Lizard, Spock Game</title>
 </head>
 <body>
@@ -13,18 +13,21 @@
 
     <div class="intro">
         
-    </div>
-
     <div class="youvscomputer">
-        <h2>Choose an option:</h2>
-        <div id="choices"></div>
-        <div id="hands">
-        <img id="player-hand">
-        <br>
-        <h2>VS</h2>
-        <br>
-        <img id="computer-hand">
-      </div>
+      <button onclick="checker(rock)">
+        <img src="assets/css/js/images/rock.png">
+    </button>
+      <button onclick="checker(paper)">
+        <img src="assets/css/js/images/paper.png">
+    </button>
+      <button onclick="checker(scissors)">
+        <img src="assets/css/js/images/scissor.png">
+    </button>
+      <button onclick="checker(lizard)">
+        <img src="assets/css/js/images/lizard.png">
+    </button>
+      <button onclick="checker(spoke)">
+        <img src="assets/css/js/images/spoke.png">
     </div>
 
     <div class="score-area">
@@ -37,6 +40,6 @@
     <p>Scissors cuts paper. Paper covers rock. Rock crushes lizard. Lizard poisons Spock. Spock smashes scissors. Scissors decapitates lizard. Lizard eats paper. Paper disproves Spock. Spock vaporizes rock. Rock crushes scissors.</p>
 </section>
 
-
+<script src="assets/css/js/script.js"></script>
 </body>
 </html>

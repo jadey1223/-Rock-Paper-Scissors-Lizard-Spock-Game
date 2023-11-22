@@ -32,34 +32,9 @@ html {
     justify-content:space-around;
     align-items: center;
 }
-#player-hand {
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-    margin-top: 4rem;
-}
-
-#computer-hand {
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-    margin-top: 4rem; 
-}
 
 #hands {
     display: flex;
     justify-content: space-around;
     margin-left: 3rem;
-}
-
-#choices {
-
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-}
-
-#choices img {
-    width: 64px;
-    height: 64px;
 }
