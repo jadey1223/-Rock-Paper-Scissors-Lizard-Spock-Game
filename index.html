@@ -10,24 +10,28 @@
 <body>
     <section>
     <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
-
-    <div class="intro">
         
     <div class="youvscomputer">
-      <button onclick="checker(rock)">
+      <button onclick="checker(`rock`)">
         <img src="assets/css/js/images/rock.png">
     </button>
-      <button onclick="checker(paper)">
+      <button onclick="checker(`paper`)">
         <img src="assets/css/js/images/paper.png">
     </button>
-      <button onclick="checker(scissors)">
+      <button onclick="checker(`scissors`)">
         <img src="assets/css/js/images/scissor.png">
     </button>
-      <button onclick="checker(lizard)">
+      <button onclick="checker(`lizard`)">
         <img src="assets/css/js/images/lizard.png">
     </button>
-      <button onclick="checker(spoke)">
+      <button onclick="checker(`spoke`)">
         <img src="assets/css/js/images/spoke.png">
+    </div>
+
+    <div class="details">
+        <p id="user_choice"></p>
+        <p id="comp_choice"></p>
+        <p id="result"></p>
     </div>
 
     <div class="score-area">

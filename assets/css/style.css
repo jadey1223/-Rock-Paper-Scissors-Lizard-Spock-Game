@@ -9,7 +9,7 @@
 html {
     font-family: "nunito" , sans-serif;
     max-width: 75%;
-     background-color: #fecd45;
+     /* background-color: #fecd45; */
 }
 
 .heading {
@@ -37,4 +37,12 @@ html {
     display: flex;
     justify-content: space-around;
     margin-left: 3rem;
+}
+
+.details {
+    margin-top: 3rem;
+}
+
+#comp_choice {
+    padding: 3rem;
 }
