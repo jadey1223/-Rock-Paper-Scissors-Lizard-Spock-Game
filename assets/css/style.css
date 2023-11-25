@@ -9,7 +9,7 @@
 html {
     font-family: "nunito" , sans-serif;
     max-width: 75%;
-     /* background-color: #fecd45; */
+     background-color: #9c957f;
 }
 
 .heading {
@@ -17,14 +17,6 @@ html {
     text-align: center;
     color: rgb(33, 33, 121);
 }
-
-#game-area {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-}
-
-
 
 #score-area {
     color: #fff;
@@ -43,6 +35,23 @@ html {
     margin-top: 3rem;
 }
 
-#comp_choice {
-    padding: 3rem;
+section {
+    background-color: rgb(214, 214, 181);
+}
+
+
+.youvscomputer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.details {
+    position: relative;
+    left: 50%;
+}
+
+button{
+    background-color: rgb(238, 193, 139);
+    border-radius: 5px;
+    border-color: #836dbe;
 }
