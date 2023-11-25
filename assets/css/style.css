@@ -15,7 +15,6 @@ html {
 .heading {
     font-size: 3rem;
     text-align: center;
-    color: rgb(33, 33, 121);
 }
 
 #score-area {
@@ -25,11 +24,6 @@ html {
     align-items: center;
 }
 
-#hands {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 3rem;
-}
 
 .details {
     margin-top: 3rem;
@@ -37,21 +31,37 @@ html {
 
 section {
     background-color: rgb(214, 214, 181);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 .youvscomputer {
     display: flex;
     justify-content: space-around;
+    gap: 2rem;
+    padding: 7rem;
+    margin-top: -4rem;
 }
 
 .details {
-    position: relative;
+    position: absolute;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
 button{
-    background-color: rgb(238, 193, 139);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    border-color: #836dbe;
+    padding: 0.3rem;
+    
+}
+
+.score-area {
+    display: flex;
+    justify-content: space-evenly;
 }

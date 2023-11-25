@@ -1,3 +1,4 @@
+let [computer_score,user_score]=[0,0];
 let result_ref = document.getElementById("result");
 let choices_object = {
     "rock" : {
@@ -55,14 +56,19 @@ function checker(input){
         case "win" :
             result_ref.style.cssText = "background-color: #00cc00;";
             result_ref.innerHTML = "YOU WIN";
+            user_score++;
             break;
         case "lose" :
             result_ref.style.cssText = "background-color: red;"
             result_ref.innerHTML = "YOU LOSE";
+            computer_score++;
             break;
         default:
             result_ref.style.cssText = "background-color: #ffff99;"
             result_ref.innerHTML = "DRAW";
             break;
     }
+
+    document.getElementById("computer_score").innerHTML = computer_score;
+    document.getElementById("user_score").innerHTML = user_score;
 }

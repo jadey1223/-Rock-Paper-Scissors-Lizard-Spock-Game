@@ -8,8 +8,11 @@
     <title> Rock, Paper, Scissors, Lizard, Spock Game</title>
 </head>
 <body>
+  <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
+
     <section id="section">
-    <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
+
+     <h2 id="intro">Choose your weapon</h2>
         
     <div class="youvscomputer">
       <button onclick="checker(`rock`)">
@@ -27,16 +30,17 @@
       <button onclick="checker(`spoke`)">
         <img src="assets/css/js/images/spoke.png">
     </div>
-
+   
     <div class="details">
         <p id="user_choice"></p>
         <p id="comp_choice"></p>
         <p id="result"></p>
     </div>
 
+    
     <div class="score-area">
-        <h2 class="scores">Player: <span id="score">0</span></h2>
-        <h2 class="scores">Computer: <span id="score">0</span></h2>
+        <h2>Player: <span id="user_score">0</span></h2>
+        <h2>Computer: <span id="computer_score">0</span></h2>
     </div>
 
 </section>
