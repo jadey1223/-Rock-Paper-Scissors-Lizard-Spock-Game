@@ -8,13 +8,16 @@
 
 html {
     font-family: "nunito" , sans-serif;
-    max-width: 75%;
-     background-color: #9c957f;
+     background-color: #CDF7F6;
 }
 
 .heading {
     font-size: 3rem;
     text-align: center;
+    color: #9A94BC;
+    font-size: bold;
+    text-align: center;
+    
 }
 
 #score-area {
@@ -25,25 +28,49 @@ html {
 }
 
 
-.details {
-    margin-top: 3rem;
+#section1 {
+    opacity: 1;
+			transition: opacity 1s ease-in-out;
 }
 
-section {
-    background-color: rgb(214, 214, 181);
+#section2 {
+    background-color: #8FB8DE;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 
+#section2 {
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#section2.active {
+    opacity: 1;
+}
+
+#section1.active {
+    opacity: 1;
+}
+
+#play-btn {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
 .youvscomputer {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
     padding: 7rem;
     margin-top: -4rem;
+   
 }
 
 .details {
@@ -51,7 +78,12 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    margin-top: 4rem; 
+}
+
+.details p {
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 button{
@@ -64,4 +96,19 @@ button{
 .score-area {
     display: flex;
     justify-content: space-evenly;
+}
+
+.score-area h2{
+    color: #fff;
+}
+
+#result {
+    text-align: center;
+    border-radius: 5px;
+}
+
+#intro {
+    color: #6A605C;
+    font-size: 1.6rem;
+   
 }
