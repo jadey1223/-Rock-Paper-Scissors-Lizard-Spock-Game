@@ -6,7 +6,7 @@ let choices_object = {
         "scissor": "win",
         "paper" : "lose",
         "lizard" : "win",
-        "spoke" : "lose"
+        "spock" : "lose"
     },
 
     "paper" : {
@@ -14,7 +14,7 @@ let choices_object = {
         "scissor": "lose",
         "paper" : "draw",
         "lizard" : "lose",
-        "spoke" : "win"
+        "spock" : "win"
     },
 
     "scissor" : {
@@ -22,7 +22,7 @@ let choices_object = {
         "scissor": "draw",
         "paper" : "win",
         "lizard" : "win",
-        "spoke" : "lose"
+        "spock" : "lose"
     },
 
     "lizard" : {
@@ -30,20 +30,20 @@ let choices_object = {
         "scissor": "lose",
         "paper" : "win",
         "lizard" : "draw",
-        "spoke" : "win"
+        "spock" : "win"
     },
 
-    "spoke" : {
+    "spock" : {
         "rock" : "win",
         "scissor": "win",
         "paper" : "lose",
         "lizard" : "lose",
-        "spoke" : "draw"
+        "spock" : "draw"
     }
 }
 
 function checker(input){
-    let choices = ["rock","paper","scissor","lizard","spoke"]
+    let choices = ["rock","paper","scissor","lizard","spock"]
     let num = Math.floor(Math.random()*5);
 
     document.getElementById("comp_choice").innerHTML = `Computer choose <span>${choices[num].toUpperCase()}</span>`;
@@ -54,12 +54,12 @@ function checker(input){
 
     switch(choices_object[input][computer_choice]) {
         case "win" :
-            result_ref.style.cssText = "background-color: #00cc00;";
+            result_ref.style.cssText = "background-color: #fff; color:#00cc00";
             result_ref.innerHTML = "YOU WIN";
             user_score++;
             break;
         case "lose" :
-            result_ref.style.cssText = "background-color: red;"
+            result_ref.style.cssText = "background-color: #fff; color:red;"
             result_ref.innerHTML = "YOU LOSE";
             computer_score++;
             break;

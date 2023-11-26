@@ -9,6 +9,7 @@
 html {
     font-family: "nunito" , sans-serif;
      background-color: #CDF7F6;
+     max-width: 75%;
 }
 
 .heading {
@@ -59,10 +60,17 @@ html {
 }
 
 #play-btn {
-    /* position: absolute;
-    top: 50%;
+    position: absolute;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+    background-color: #8FB8DE;
+    padding: 0.7rem;
+    border: none;
+    text-transform:uppercase;
+    font-size: larger;
+    font-weight: bold;
+    color: #6A605C;
 }
 .youvscomputer {
     display: flex;
@@ -105,6 +113,7 @@ button{
 #result {
     text-align: center;
     border-radius: 5px;
+    font-size: 1.5rem;
 }
 
 #intro {
