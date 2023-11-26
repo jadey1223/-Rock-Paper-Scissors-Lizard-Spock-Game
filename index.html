@@ -11,7 +11,8 @@
   <section id="section1">
 
   <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock Game</h1>
-  <button id="play-btn" onclick="document.getElementById('section2').classList.add('active'); document.getElementById('section2').scrollIntoView({behavior: 'smooth'});">Lets play</button>
+
+  <button id="play-btn" onclick="document.getElementById('section2').classList.add('active'); document.getElementById('section2').scrollIntoView({behavior: 'smooth'});">Lets play!</button>
 
 
 </section>
@@ -20,20 +21,29 @@
      <h2 id="intro">Choose your weapon</h2>
         
     <div class="youvscomputer">
+
+      <div class="div1">
       <button onclick="checker(`rock`)">
         <img src="assets/css/js/images/rock.png">
+        Rock
     </button>
       <button onclick="checker(`paper`)">
         <img src="assets/css/js/images/paper.png">
-    </button>
+        Paper
+    </button></div>
+
+    <div class="div2">
       <button onclick="checker(`scissor`)">
         <img src="assets/css/js/images/scissor.png">
+        Scissors
     </button>
       <button onclick="checker(`lizard`)">
         <img src="assets/css/js/images/lizard.png">
-    </button>
+        Lizard
+    </button></div>
       <button onclick="checker(`spock`)">
         <img src="assets/css/js/images/spock.png">
+        Spock
     </div>
    
     <div class="details">

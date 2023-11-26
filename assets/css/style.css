@@ -18,6 +18,9 @@ html {
     color: #9A94BC;
     font-size: bold;
     text-align: center;
+   
+    width: 100%;
+    transform: translate(20%);
     
 }
 
@@ -37,11 +40,12 @@ html {
 #section2 {
     background-color: #8FB8DE;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 1rem;
+    margin-top: 15rem;
 }
 
 
@@ -61,7 +65,7 @@ html {
 
 #play-btn {
     position: absolute;
-    top: 25%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #8FB8DE;
@@ -76,9 +80,9 @@ html {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
-    padding: 7rem;
-    margin-top: -4rem;
-   
+    padding: 5rem;
+    padding-top: 2rem;
+    
 }
 
 .details {
@@ -86,24 +90,28 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 4rem; 
+    margin-top: 5rem;
+    
 }
 
 .details p {
     font-weight: bold;
     font-size: 1.3rem;
+    
 }
 
 button{
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 0.3rem;
-    
+    font-weight: bold;
+    box-shadow: 12px 12px 2px 1px rgba(107, 107, 190, 0.2);;
 }
 
 .score-area {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 3rem;
 }
 
 .score-area h2{
@@ -120,4 +128,32 @@ button{
     color: #6A605C;
     font-size: 1.6rem;
    
+}
+
+@media screen and (max-width: 708px){
+    .youvscomputer{
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 5;
+        gap: 2rem;
+    }
+    .div1 {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .div2 {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .details {
+        margin-top: 12.1rem;
+    }
+
+    .score-area {
+        margin-top: 7rem;
+    }
+
+    
 }
