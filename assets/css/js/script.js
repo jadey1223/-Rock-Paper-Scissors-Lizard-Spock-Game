@@ -1,4 +1,7 @@
 let [computer_score,user_score]=[0,0];
+let count = 0;
+let myNumber;
+myNumber = 0;
 let result_ref = document.getElementById("result");
 let choices_object = {
     "rock" : {
@@ -68,7 +71,9 @@ function checker(input){
             result_ref.innerHTML = "DRAW";
             break;
     }
-
+    document.getElementById("counter").innerHTML = count++;
     document.getElementById("computer_score").innerHTML = computer_score;
     document.getElementById("user_score").innerHTML = user_score;
 }
+
+//Game reset

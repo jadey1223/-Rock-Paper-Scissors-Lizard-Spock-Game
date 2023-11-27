@@ -124,10 +124,12 @@ button{
     font-size: 1.5rem;
 }
 
-#intro {
+
+.container {
+    display: flex;
+    justify-content: space-between;
     color: #6A605C;
-    font-size: 1.6rem;
-   
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 708px){
