@@ -93,7 +93,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 7rem;
+    margin-top: 5rem;
     
 }
 
@@ -117,6 +117,10 @@ button{
     margin-top: 3rem;
 }
 
+.score-area {
+    margin-bottom: 2rem;
+}
+
 .score-area h2{
     color: #fff;
 }
@@ -135,43 +139,52 @@ button{
     font-size: 1rem;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-   
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
   }
 
-  .dropbtn {
-    margin-bottom: 3rem;
-  }
-
-  .dropdown-content {
+  .accordion_content {
+    background-color: #9A94BC;
+    cursor: pointer;
+    overflow: hidden;
     display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    max-width: 200px;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
   }
 
-  .dropdown-content p {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    max-width: 300px;
+  .accordion:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
   }
-.dropdown-content a:hover {background-color: #ddd;}
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .active:after {
+    content: "\2796"; 
+  }
 
 
-.dropdown:hover .dropdown-content {display: block;}
+  #game_counter {
+    color: #fff;
+  }
 
-
-.dropdown:hover .dropbtn {background-color: #cce7cc;}
-
-
-
+  #vs {
+    color:black;
+  }
 
 @media screen and (max-width: 708px){
     .youvscomputer{
@@ -191,17 +204,49 @@ button{
     }
 
     .details {
-        margin-top: 12.1rem;
+        margin-top: 10rem;
     }
 
     .score-area {
-        margin-top: 7rem;
+        margin-top: 9rem;
     }
 
     #section2 {
-        position: absolute;
-    top: 50rem;
+    position: absolute;
+    top: 60rem;
     left: 50%;
     transform: translate(-50%, -100%);
+    }
+
+    #play-btn {
+        top: 25rem;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #vs{
+        text-align: center;
+    }
+
+    #com{
+        position: relative;
+        left: 13rem;
+    }
+    .score-area{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #play-btn {
+        top: 20rem;
+        left: 50%;
+        transform: translate(-50%, -100%);
     }
 }

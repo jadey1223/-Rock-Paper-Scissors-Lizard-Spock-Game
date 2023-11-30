@@ -76,4 +76,19 @@ function checker(input){
     document.getElementById("user_score").innerHTML = user_score;
 }
 
-//Game reset
+//accordian
+let acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i=0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+
+    let .accordion_content = this.nextElementSibling;
+    if (accordion_content.style.maxHeight) {
+        accordion_content.style.maxHeight = null;
+      } else {
+        accordion_content.style.maxHeight = panel.scrollHeight + "px";
+      } 
+  });
+} 

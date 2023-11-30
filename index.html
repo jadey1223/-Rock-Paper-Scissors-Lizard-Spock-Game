@@ -8,6 +8,9 @@
     <title> Rock, Paper, Scissors, Lizard, Spock Game</title>
 </head>
 <body>
+
+  
+
   <section id="section1">
 
     
@@ -17,13 +20,29 @@
   <button id="play-btn" onclick="document.getElementById('section2').classList.add('active'); document.getElementById('section2').scrollIntoView({behavior: 'smooth'});">Lets play</button>
 
 
+    <button class="accordion">The Rules</button>
+    <div class="accordion_content">
+      <ul>
+       <li>Scissors cuts paper </li>
+       <li>Paper covers rock</li>
+       <li>Rock crushes lizard </li>
+       <li>Lizard poisons Spock</li>
+       <li>Spock smashes scissors</li> 
+       <li>Scissors decapitates lizard</li>
+       <li>Lizard eats paper</li> 
+       <li>Paper disproves Spock </li>
+       <li>Spock vaporizes rock</li> 
+       <li>Rock crushes scissors.</li>
+      </ul>
+  </div> 
+
 </section>
     <section id="section2">
 
       <div class="container">
      <h2 id="intro">Choose your weapon</h2>
 
-     <h2>Game:<span id="counter"> 0</span></h2></div>
+     <h2 id="game_counter">Game:<span id="counter"> 0</span></h2></div>
         
     <div class="youvscomputer">
 
@@ -60,25 +79,10 @@
     
     <div class="score-area">
         <h2>Player: <span id="user_score">0</span></h2>
-        <h2>Computer: <span id="computer_score">0</span></h2>
+        <h2 id="vs">VS</h2>
+        <h2 id="com">Computer: <span id="computer_score">0</span></h2>
     </div>
     
-<div class="dropdown">
-  <button class="dropbtn">The Rules</button>
-  <div class="dropdown-content">
-    <ul>
-    <li>Scissors cuts paper </li>
-    <li>Paper covers rock</li>
-    <li>Rock crushes lizard </li>
-    <li>Lizard poisons Spock</li>
-    <li>Spock smashes scissors</li> 
-    <li>Scissors decapitates lizard </li>
-    <li>Lizard eats paper</li> 
-    <li>Paper disproves Spock </li>
-     <li>Spock vaporizes rock</li> 
-     <li>Rock crushes scissors.</li>
-    </ul>
-</div> 
 </section>
 
 <!-- <button onclick="window.location.reload();">Reset</button> -->
