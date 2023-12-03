@@ -9,7 +9,8 @@
 html {
     font-family: "nunito" , sans-serif;
      background-color: #CDF7F6;
-    width: 100%;
+    
+   
 }
 
 .heading {
@@ -42,18 +43,13 @@ html {
 
 #section2 {
     background-color: #8FB8DE;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -100%);
     border-radius: 10px;
     padding: 1rem;
-    margin-top: 15rem;
+    margin-top: 9rem;
 }
 
 
 #section2 {
-
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -88,18 +84,18 @@ html {
     
 }
 
-.details {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 5rem;
-    
-}
 
 .details p {
     font-weight: bold;
     font-size: 1.3rem;
+    text-align: center;
+    
+}
+
+#result {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
     
 }
 
@@ -108,7 +104,13 @@ button{
     border-radius: 5px;
     padding: 0.3rem;
     font-weight: bold;
-    box-shadow: 12px 12px 2px 1px rgba(107, 107, 190, 0.2);;
+    box-shadow: 5px 10px 2px 1px rgba(21, 21, 138, 0.2);
+    border: solid 1px;
+}
+
+.youvscomputer, button:hover{
+    background-color: #8FB8DE;
+    
 }
 
 .score-area {
@@ -117,20 +119,9 @@ button{
     margin-top: 3rem;
 }
 
-.score-area {
-    margin-bottom: 2rem;
-}
-
 .score-area h2{
     color: #fff;
 }
-
-#result {
-    text-align: center;
-    border-radius: 5px;
-    font-size: 1.5rem;
-}
-
 
 .container {
     display: flex;
@@ -157,7 +148,10 @@ label::before{
     content: '+';
 }
 
-
+#rule_hd{
+    font-size: 1.5rem;
+    font-style: italic;
+}
   #game_counter {
     color: #fff;
   }
@@ -171,7 +165,7 @@ label::before{
         display: flex;
         flex-direction: column;
         flex-shrink: 5;
-        gap: 2rem;
+        gap: 1rem;
     }
     .div1 {
         display: flex;
@@ -183,50 +177,40 @@ label::before{
         gap: 1rem;
     }
 
-    .details {
-        margin-top: 10rem;
-    }
-
-    .score-area {
-        margin-top: 9rem;
-    }
-
-    #section2 {
-    position: absolute;
-    top: 60rem;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    }
-
     #play-btn {
-        top: 25rem;
+        top: 31rem;
         left: 50%;
         transform: translate(-50%, -100%);
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (min-width:5rem) and (max-width: 707px) {
     .container{
         display: flex;
         flex-direction: column;
     }
 
-    #vs{
-        text-align: center;
-    }
-
-    #com{
-        position: relative;
-        left: 13rem;
-    }
     .score-area{
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     #play-btn {
-        top: 20rem;
+        top: 35rem;
         left: 50%;
         transform: translate(-50%, -100%);
+    }
+    
+    .content {
+        margin-left: 2rem;
+        background-color: #fff;
+        margin-right: 2rem;
+        border-radius: 8px;
+        padding: 1rem;
+    }
+
+    .accordion {
+        margin-top: 2rem;
     }
 }
