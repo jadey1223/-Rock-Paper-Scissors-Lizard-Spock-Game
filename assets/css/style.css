@@ -9,8 +9,6 @@
 html {
     font-family: "nunito" , sans-serif;
      background-color: #CDF7F6;
-    
-   
 }
 
 .heading {
@@ -46,6 +44,7 @@ html {
     border-radius: 10px;
     padding: 1rem;
     margin-top: 9rem;
+    max-width: 800px;
 }
 
 
@@ -64,7 +63,7 @@ html {
 
 #play-btn {
     position: absolute;
-    top: 30%;
+    top: 33rem;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #8FB8DE;
@@ -78,9 +77,9 @@ html {
 .youvscomputer {
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
-    padding: 5rem;
+    
     padding-top: 2rem;
+    padding-bottom: 2rem;
     
 }
 
@@ -138,6 +137,14 @@ input[type="radio"]{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
+    margin-left: 2rem;
+    background-color: #fff;
+    margin-right: 2rem;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 300px;
+
+
 }
 
 .accordion input[type="radio"]:checked + label + .content{
@@ -160,26 +167,6 @@ label::before{
     color:black;
   }
 
-@media screen and (max-width: 708px){
-
-    .div1 {
-        display: flex;
-        gap: 1rem;
-        justify-content: space-between;
-    }
-    
-    .div2 {
-        display: flex;
-        gap: 1rem;
-        justify-content: space-between;
-    }
-
-    #play-btn {
-        top: 31rem;
-        left: 50%;
-        transform: translate(-50%, -100%);
-    }
-}
 
 @media screen and (min-width:477px) and (max-width: 707px) {
 
@@ -213,13 +200,39 @@ label::before{
     .accordion {
         margin-top: 2rem;
     }
-
-
 }
 
 @media screen and (max-width:476px) {
     .youvscomputer{
         display: flex;
         flex-direction: column;
+        gap: 2rem;
+    }
+
+    .content {
+        margin-left: 2rem;
+        background-color: #fff;
+        margin-right: 2rem;
+        border-radius: 8px;
+        padding: 1rem;
+    }
+
+    #play-btn {
+        top: 37rem;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .div1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .div2 {
+        display: flex;
+        justify-content: space-between;
     }
 }
