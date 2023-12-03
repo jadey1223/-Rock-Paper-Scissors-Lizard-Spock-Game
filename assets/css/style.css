@@ -161,20 +161,17 @@ label::before{
   }
 
 @media screen and (max-width: 708px){
-    .youvscomputer{
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 5;
-        gap: 1rem;
-    }
+
     .div1 {
         display: flex;
         gap: 1rem;
+        justify-content: space-between;
     }
     
     .div2 {
         display: flex;
         gap: 1rem;
+        justify-content: space-between;
     }
 
     #play-btn {
@@ -184,7 +181,10 @@ label::before{
     }
 }
 
-@media screen and (min-width:5rem) and (max-width: 707px) {
+@media screen and (min-width:477px) and (max-width: 707px) {
+
+   
+
     .container{
         display: flex;
         flex-direction: column;
@@ -212,5 +212,14 @@ label::before{
 
     .accordion {
         margin-top: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width:476px) {
+    .youvscomputer{
+        display: flex;
+        flex-direction: column;
     }
 }
