@@ -9,7 +9,7 @@
 html {
     font-family: "nunito" , sans-serif;
      background-color: #CDF7F6;
-
+    width: 100%;
 }
 
 .heading {
@@ -139,43 +139,23 @@ button{
     font-size: 1rem;
 }
 
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-
-  .accordion_content {
-    background-color: #9A94BC;
-    cursor: pointer;
-    overflow: hidden;
+input[type="radio"]{
     display: none;
-    z-index: 1;
-    transition: max-height 0.2s ease-out;
+}
+
+.content {
     max-height: 0;
-  }
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
 
-  .accordion:after {
-    content: '\02795'; 
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+}
 
-  .active:after {
-    content: "\2796"; 
-  }
+label::before{
+    content: '+';
+}
 
 
   #game_counter {
