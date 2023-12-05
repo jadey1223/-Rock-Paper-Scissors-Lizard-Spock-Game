@@ -136,14 +136,57 @@ button{
         z-index: 1;
         overflow: auto;
         position: fixed;
-        
-    }
+        padding-top: 10rem;
+        background-color: rgba(0,0,0,0.4);
+        width: 100%;
+        height: 100%;
 
+    }
+    
     .modal-content {
         background-color: #fff;
-        padding: 3rem;
+        padding: 2rem;
         border: 1px solid black;
+        border-radius: 8px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        animation-name: animatetop;
+        animation-duration: 0.4s
     }
+
+    #myBtn {
+        margin: 0;
+        position: absolute;
+        top: rem;
+        left: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #000000;
+        background-color: #8FB8DE;
+        font-weight: bold;
+    }
+
+    #myBtn:hover {
+        cursor: pointer;
+        background-color: #9A94BC;
+    }
+
+    .close {
+        color: #9A94BC;
+        font-size: 3rem;
+    }
+
+    .close:hover {
+        color: black;
+        cursor: pointer;
+    } 
+
+    @keyframes animatetop {
+        from {top: -300px; opacity: 0}
+        to {top: 0; opacity: 1}
+      }
+
+/*modal end*/
 
     .close {
         float: right;
