@@ -129,31 +129,26 @@ button{
     font-size: 1rem;
 }
 
-input[type="radio"]{
-    display: none;
-}
+/*modal start*/
 
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
-    margin-left: 2rem;
-    background-color: #fff;
-    margin-right: 2rem;
-    border-radius: 8px;
-    padding: 1rem;
-    max-width: 300px;
+    .modal {
+        display: none;
+        z-index: 1;
+        overflow: auto;
+        position: fixed;
+        
+    }
 
+    .modal-content {
+        background-color: #fff;
+        padding: 3rem;
+        border: 1px solid black;
+    }
 
-}
-
-.accordion input[type="radio"]:checked + label + .content{
-    max-height: 400px;
-}
-
-label::before{
-    content: '+';
-}
+    .close {
+        float: right;
+        font-size: 2rem;
+    }
 
 #rule_hd{
     font-size: 1.5rem;

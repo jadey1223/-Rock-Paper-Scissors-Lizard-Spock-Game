@@ -19,23 +19,18 @@
 
   <button id="play-btn" onclick="document.getElementById('section2').classList.add('active'); document.getElementById('section2').scrollIntoView({behavior: 'smooth'});">Lets play</button>
 
-<div class="accordion">
-    <input type="radio" name="accordion" id="first">
-    <label for="first" id="rule_hd">Rules</label>
-    
-      <ul class="content">
-       <li>Scissors cuts paper </li>
-       <li>Paper covers rock</li>
-       <li>Rock crushes lizard </li>
-       <li>Lizard poisons Spock</li>
-       <li>Spock smashes scissors</li> 
-       <li>Scissors decapitates lizard</li>
-       <li>Lizard eats paper</li> 
-       <li>Paper disproves Spock </li>
-       <li>Spock vaporizes rock</li> 
-       <li>Rock crushes scissors.</li>
-      </ul>
-  </div> 
+  <button id="myBtn">Open Modal</button>
+
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+   <!-- Modal content -->
+   <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
 
 </section>
     <section id="section2">
@@ -89,6 +84,6 @@
 <!-- <button onclick="window.location.reload();">Reset</button> -->
 
    
-<script src="assets/css/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

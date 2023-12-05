@@ -75,3 +75,21 @@ function checker(input){
     document.getElementById("computer_score").innerHTML = computer_score;
     document.getElementById("user_score").innerHTML = user_score;
 }
+
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
+
+btn.onclick= function(){
+    modal.style.display ="block";
+}
+
+span.onclick= function(){
+    modal.style.display ="none";
+}
+
+window.onclick = function(event){
+    if(event.target == modal){
+        modal.style.display ="none"
+    }
+}
