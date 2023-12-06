@@ -14,10 +14,8 @@
   <section id="section1">
 
     
-    <img src="assets/css/js/images/rock-paper-scissors.png" id="title-img">
-  <h1 class="heading">LIZARD & SPOCK Game</h1>
-
-  <button id="play-btn" onclick="document.getElementById('section2').classList.add('active'); document.getElementById('section2').scrollIntoView({behavior: 'smooth'});">Lets play</button>
+    <img src="assets/images/rock-paper-scissors.png" id="title-img">
+  <h1 class="heading">LIZARD & SPOCK</h1>
 
   <button id="myBtn">Rules</button>
 
@@ -34,9 +32,11 @@
 
 </div>
 
-</section>
-    <section id="section2">
 
+<button  id="reset" >Reset</button>
+
+</section>
+   
       <div class="container">
      <h2 id="intro">Choose your weapon</h2>
 
@@ -46,25 +46,25 @@
 
       <div class="div1">
       <button onclick="checker(`rock`)">
-        <img src="assets/images/rock.png">
+        <img src="assets/images/rock.png" id="rock_img">
         Rock
     </button>
       <button onclick="checker(`paper`)">
-        <img src="assets/images/paper.png">
+        <img src="assets/images/paper.png" id="paper_img">
         Paper
     </button></div>
 
     <div class="div2">
       <button onclick="checker(`scissor`)">
-        <img src="assets/images/scissor.png">
+        <img src="assets/images/scissor.png" id="scissor_img">
         Scissors
     </button>
       <button onclick="checker(`lizard`)">
-        <img src="assets/images/lizard.png">
+        <img src="assets/images/lizard.png" id="lizard_img">
         Lizard
     </button></div>
       <button onclick="checker(`spock`)">
-        <img src="assets/images/spock.png">
+        <img src="assets/images/spock.png" id="spock.img">
         Spock
     </div>
    
@@ -74,7 +74,12 @@
         <p id="result"></p>
     </div>
 
-    
+    <
+
+    <img id="players_choice" src="">
+    <img id="computer" src="">
+
+
     <div class="score-area">
         <h2>Player: <span id="user_score">0</span></h2>
         <h2 id="vs">VS</h2>
@@ -83,7 +88,7 @@
     
 </section>
 
-<!-- <button onclick="window.location.reload();">Reset</button> -->
+
 
    
 <script src="assets/js/script.js"></script>

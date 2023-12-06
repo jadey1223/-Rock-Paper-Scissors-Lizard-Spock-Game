@@ -76,6 +76,11 @@ function checker(input){
     document.getElementById("user_score").innerHTML = user_score;
 }
 
+//Random image choice
+
+let images = ["rock_img","paper_img","scissor_img","lizard_img","spock.img"]
+
+
 
 //Modal//
 let modal = document.getElementById("myModal");
@@ -98,4 +103,17 @@ window.onclick = function(event){
         modal.style.display ="none"
     }
 }
+
+//Reset button//
+
+let reset = 0;
+
+document.getElementById("reset").onclick = function(){
+    count = 0;
+    document.getElementById("user_score").innerHTML= reset;
+    document.getElementById("computer_score").innerHTML= reset;
+    document.getElementById("counter").innerHTML= reset;
+}
+
+
 

@@ -34,10 +34,6 @@ html {
 }
 
 
-#section1 {
-    opacity: 1;
-	transition: opacity 1s ease-in-out;
-}
 
 #section2 {
     background-color: #8FB8DE;
@@ -47,33 +43,6 @@ html {
     max-width: 800px;
 }
 
-
-#section2 {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-#section2.active {
-    opacity: 1;
-}
-
-#section1.active {
-    opacity: 1;
-}
-
-#play-btn {
-    position: absolute;
-    top: 33rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #8FB8DE;
-    padding: 0.7rem;
-    border: none;
-    text-transform:uppercase;
-    font-size: larger;
-    font-weight: bold;
-    color: #6A605C;
-}
 .youvscomputer {
     display: flex;
     justify-content: space-around;
@@ -157,7 +126,7 @@ button{
     #myBtn {
         margin: 0;
         position: absolute;
-        top: rem;
+        top: 15rem;
         left: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -255,11 +224,6 @@ button{
         padding: 1rem;
     }
 
-    #play-btn {
-        top: 37rem;
-        left: 50%;
-        transform: translate(-50%, -100%);
-    }
     .container{
         display: flex;
         flex-direction: column;
