@@ -23,7 +23,7 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 #score-area {
@@ -52,9 +52,7 @@ section {
     opacity: 1;
   }
   
-  .option_image.active{
-    opacity: 1;
-  }
+ 
 
   .user_result,
    .comp_result{
@@ -69,14 +67,7 @@ section {
 
 /* result image - end */
 
-.youvscomputer {
-    display: flex;
-    justify-content: space-around;
-    
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    
-}
+
 
 /* Game results - start*/
 .details {
@@ -98,6 +89,17 @@ section {
 }
 /* Game results - end*/
 
+/*imagebtn - start */
+button{
+   padding: 1rem;
+   border-radius: 8px;
+   border: 1px solid #9A94BC;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #9A94BC;
+}
 
 .option_image.active {
     opacity: 1;
@@ -115,9 +117,6 @@ section {
 
 .container {
     display: flex;
-    justify-content: space-between;
-    color: #6A605C;
-    font-size: 1rem;
 }
 
 /*modal start*/
@@ -150,7 +149,7 @@ section {
         margin: 0;
         float: right;
         color: #000000;
-        background-color: #8FB8DE;
+        background-color: #fff;
         font-weight: bold;
         border-radius: 8px;
         padding: 0.2rem;
@@ -165,7 +164,7 @@ section {
     #reset {
         margin-bottom: 2rem;
         float: right;
-        background-color: #8FB8DE;
+        background-color: #fff;
         font-weight: bold;
         position: relative;
         right:  0.5rem;
@@ -207,17 +206,19 @@ section {
         to {top: 0; opacity: 1}
       }
       #opponent-choice {
-        width: 240px;
-        height: 240px;
-        /* background-color: cyan; */
+        width: 100px;
+        height: 100px;
         margin-top: 10px;
+        background-color: #fff;
+        border-radius: 8px;
     }
     
     #your-choice {
-        width: 240px;
-        height: 240px;
-        /* background-color: yellow; */
-        margin-top: 10px; 
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        background-color: #fff;
+        border-radius: 8px;
     }
     
     #choices {
@@ -244,23 +245,64 @@ section {
     font-size: 1.5rem;
     font-style: italic;
 }
-  #game_counter {
-    color: #fff;
-  }
+ 
 
   #vs {
     color:black;
   }
 
+  /*media queries*/
 
+  @media screen and (min-width:707px) and (max-width:1500px) {
+
+    .head_img {
+        position: absolute;
+        top: 5rem;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+
+    section{
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  .one_two_three{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .div1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    }
+
+    .div2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+   
+    }
+    .div3 {
+    display: flex;
+    
+    }
+    #game_counter {
+        color: #fff;
+        position: relative;
+        left: 15rem;
+        top: 1rem;
+        
+       }
+
+  }
+
+ 
 @media screen and (min-width:477px) and (max-width: 707px) {
 
-   
-
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
 
     .score-area{
         display: flex;
@@ -285,6 +327,34 @@ section {
     .accordion {
         margin-top: 2rem;
     }
+
+     #game_counter {
+    color: #fff;
+    position: relative;
+    left: 5.5rem;
+    top: 1rem;
+   }
+
+   .div1 {
+    display: flex;
+    gap: 6rem;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    }
+
+    .div2 {
+    display: flex;
+    gap: 6rem;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    }
+    .div3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    position: relative;
+    bottom: 13rem;
+    }
 }
 
 @media screen and (max-width:476px) {
@@ -302,17 +372,27 @@ section {
         padding: 1rem;
     }
 
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
     }
+
     .div1 {
         display: flex;
-        justify-content: space-between;
+        gap: 2rem;
+        justify-content: space-evenly;
+        margin-top: 1rem;
     }
 
     .div2 {
         display: flex;
-        justify-content: space-between;
+        gap: 2rem;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
+    .div3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
     }
 }
