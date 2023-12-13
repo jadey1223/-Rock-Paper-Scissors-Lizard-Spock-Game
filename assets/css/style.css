@@ -33,15 +33,41 @@ html {
     align-items: center;
 }
 
-
-
-#section2 {
-    background-color: #8FB8DE;
-    border-radius: 10px;
+section {
+    background-color:#8fb8de;
+    border-radius: 8px;
     padding: 1rem;
-    margin-top: 9rem;
-    max-width: 800px;
+    margin: 1rem;
 }
+
+/* result image - start */
+
+.result_image {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+
+  .result_image.active{
+    opacity: 1;
+  }
+  
+  .option_image.active{
+    opacity: 1;
+  }
+
+  .user_result,
+   .comp_result{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: solid 1px
+  }
+
+
+
+
+/* result image - end */
 
 .youvscomputer {
     display: flex;
@@ -52,6 +78,10 @@ html {
     
 }
 
+/* Game results - start*/
+.details {
+    margin-top: 3rem;
+}
 
 .details p {
     font-weight: bold;
@@ -66,19 +96,11 @@ html {
     font-size: 1.5rem;
     
 }
+/* Game results - end*/
 
-button{
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 0.3rem;
-    font-weight: bold;
-    box-shadow: 5px 10px 2px 1px rgba(21, 21, 138, 0.2);
-    border: solid 1px;
-}
 
-.youvscomputer, button:hover{
-    background-color: #8FB8DE;
-    
+.option_image.active {
+    opacity: 1;
 }
 
 .score-area {
@@ -123,21 +145,51 @@ button{
         animation-duration: 0.4s
     }
 
+    /*button - start*/
     #myBtn {
         margin: 0;
-        position: absolute;
-        top: 15rem;
-        left: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        float: right;
         color: #000000;
         background-color: #8FB8DE;
         font-weight: bold;
+        border-radius: 8px;
+        padding: 0.2rem;
+        border: solid 1.5px #9A94BC;
     }
 
     #myBtn:hover {
         cursor: pointer;
         background-color: #9A94BC;
+    }
+
+    #reset {
+        margin-bottom: 2rem;
+        float: right;
+        background-color: #8FB8DE;
+        font-weight: bold;
+        position: relative;
+        right:  0.5rem;
+        border-radius: 8px;
+        padding: 0.2rem;
+        border: solid 1.5px #9A94BC;
+    }
+
+    #reset:hover {
+        cursor: pointer;
+        background-color: #9A94BC;
+    }
+
+    .game_btn{
+        position: relative;
+        top: 1.5rem;
+        right: 1.7rem;
+        gap: 1rem;
+        background-color: #fff;
+    }
+    /*button - end*/
+
+    #intro {
+        margin-top: 1rem;
     }
 
     .close {
@@ -154,7 +206,33 @@ button{
         from {top: -300px; opacity: 0}
         to {top: 0; opacity: 1}
       }
-
+      #opponent-choice {
+        width: 240px;
+        height: 240px;
+        /* background-color: cyan; */
+        margin-top: 10px;
+    }
+    
+    #your-choice {
+        width: 240px;
+        height: 240px;
+        /* background-color: yellow; */
+        margin-top: 10px; 
+    }
+    
+    #choices {
+        width: 240px;
+        height: 80px;
+        /* background-color: green; */
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    #choices img {
+        width: 80px;
+        height: 80px;
+    }
+     
 /*modal end*/
 
     .close {

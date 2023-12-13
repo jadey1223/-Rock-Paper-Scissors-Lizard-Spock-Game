@@ -50,8 +50,8 @@ function checker(input){
     let num = Math.floor(Math.random()*5);
 
     document.getElementById("comp_choice").innerHTML = `Computer choose <span>${choices[num].toUpperCase()}</span>`;
-
     document.getElementById("user_choice").innerHTML = `Player choose <span>${input.toUpperCase()}</span>`;
+    document.getElementById("your-choice").src = input + ".png";
 
     let computer_choice = choices[num];
 
@@ -75,11 +75,6 @@ function checker(input){
     document.getElementById("computer_score").innerHTML = computer_score;
     document.getElementById("user_score").innerHTML = user_score;
 }
-
-//Random image choice
-
-let images = ["rock_img","paper_img","scissor_img","lizard_img","spock.img"]
-
 
 
 //Modal//
@@ -115,5 +110,9 @@ document.getElementById("reset").onclick = function(){
     document.getElementById("counter").innerHTML= reset;
 }
 
+userResult = document.querySelector(".user_result"),
+compResult = document.querySelector(".comp_result"),
+optionImages = document.querySelectorAll(".option_image"),
+resultImage = documment.querySelector("result_image")
 
 

@@ -11,13 +11,15 @@
 
   
 
-  <section id="section1">
 
-    
+
+  <article>>
     <img src="assets/images/rock-paper-scissors.png" id="title-img">
   <h1 class="heading">LIZARD & SPOCK</h1>
 
+  <div class="game_btn">
   <button id="myBtn">Rules</button>
+<button  id="reset" >Reset</button></div>
 
   <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -28,44 +30,64 @@
     <p> Scissors cuts paper ,
       Paper covers rock, Rock crushes lizard ,Lizard poisons Spock, Spock smashes scissors, Scissors decapitates lizard, Lizard eats paper, Paper disproves Spock, Spock vaporizes rock, Rock crushes scissors.
      </p>
-  </div>
-
+    </div>
 </div>
 
+</article>
 
-<button  id="reset" >Reset</button>
-
-</section>
+<section>
    
       <div class="container">
      <h2 id="intro">Choose your weapon</h2>
 
      <h2 id="game_counter">Game:<span id="counter"> 0</span></h2></div>
         
-    <div class="youvscomputer">
+    <div class="option_images">
 
-      <div class="div1">
+      
       <button onclick="checker(`rock`)">
-        <img src="assets/images/rock.png" id="rock_img">
+        <span class="option_image">
+        <img src="assets/images/rock.png" id="rock.png">
         Rock
-    </button>
-      <button onclick="checker(`paper`)">
-        <img src="assets/images/paper.png" id="paper_img">
-        Paper
-    </button></div>
+    </span></button>
 
-    <div class="div2">
+   
+      <button onclick="checker(`paper`)">
+         <span class="option_image">
+        <img src="assets/images/paper.png" id="paper.png">
+        Paper
+    </span></button>
+
+   
       <button onclick="checker(`scissor`)">
-        <img src="assets/images/scissor.png" id="scissor_img">
+         <span class="option_image">
+        <img src="assets/images/scissor.png" id="scissor.png">
         Scissors
-    </button>
+    </span></button>
+
+   
       <button onclick="checker(`lizard`)">
-        <img src="assets/images/lizard.png" id="lizard_img">
+         <span class="option_image">
+        <img src="assets/images/lizard.png" id="lizard.png">
         Lizard
-    </button></div>
+    </span></button>
+
+     
       <button onclick="checker(`spock`)">
-        <img src="assets/images/spock.png" id="spock.img">
+        <span class="option_image">
+        <img src="assets/images/spock.png" id="spock.png">
         Spock
+    </span></div>
+
+    <div class="result_image">
+
+
+
+      <img src="" id="opponent-choice">
+     
+      <img src="" id="your-choice">
+
+    
     </div>
    
     <div class="details">
@@ -73,12 +95,6 @@
         <p id="comp_choice"></p>
         <p id="result"></p>
     </div>
-
-    <
-
-    <img id="players_choice" src="">
-    <img id="computer" src="">
-
 
     <div class="score-area">
         <h2>Player: <span id="user_score">0</span></h2>
