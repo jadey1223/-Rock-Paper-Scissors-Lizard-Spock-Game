@@ -51,9 +51,11 @@ function checker(input){
 
     document.getElementById("comp_choice").innerHTML = `Computer choose <span>${choices[num].toUpperCase()}</span>`;
     document.getElementById("user_choice").innerHTML = `Player choose <span>${input.toUpperCase()}</span>`;
+    document.getElementById("your-choice").src = `assets/images/${input}.png`;
     
-
+    
     let computer_choice = choices[num];
+    document.getElementById("opponent-choice").src = `assets/images/${computer_choice}.png`;
 
     switch(choices_object[input][computer_choice]) {
         case "win" :
@@ -101,13 +103,16 @@ window.onclick = function(event){
 
 //Reset button//
 
-let reset = 0;
+
 
 document.getElementById("reset").onclick = function(){
     count = 0;
-    document.getElementById("user_score").innerHTML= reset;
-    document.getElementById("computer_score").innerHTML= reset;
+    computer_score = 0;
+    user_score = 0;
+    document.getElementById("user_score").innerHTML= user_score;
+    document.getElementById("computer_score").innerHTML= computer_score;
     document.getElementById("counter").innerHTML= count;
+
 }
 
 
