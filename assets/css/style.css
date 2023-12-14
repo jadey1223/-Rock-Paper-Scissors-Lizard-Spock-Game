@@ -24,6 +24,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    width: 50%;
 }
 
 #score-area {
@@ -264,7 +265,7 @@ button:hover{
 
     section{
     position: absolute;
-    top: 25rem;
+    top: 29rem;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -272,18 +273,19 @@ button:hover{
   .one_two_three{
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
   }
 
   .div1 {
     display: flex;
     justify-content: space-evenly;
-    gap: 2rem;
+    /* gap: 1rem; */
     }
 
     .div2 {
     display: flex;
     justify-content: space-evenly;
-    gap: 2rem;
+    /* gap: 1rem; */
    
     }
     .div3 {
@@ -293,7 +295,7 @@ button:hover{
     #game_counter {
         color: #fff;
         position: relative;
-        left: 15rem;
+        left: 10rem;
         top: 1rem;
         
        }

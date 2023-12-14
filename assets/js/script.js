@@ -51,7 +51,7 @@ function checker(input){
 
     document.getElementById("comp_choice").innerHTML = `Computer choose <span>${choices[num].toUpperCase()}</span>`;
     document.getElementById("user_choice").innerHTML = `Player choose <span>${input.toUpperCase()}</span>`;
-    document.getElementById("your-choice").src = input + ".png";
+    
 
     let computer_choice = choices[num];
 
@@ -107,12 +107,7 @@ document.getElementById("reset").onclick = function(){
     count = 0;
     document.getElementById("user_score").innerHTML= reset;
     document.getElementById("computer_score").innerHTML= reset;
-    document.getElementById("counter").innerHTML= reset;
+    document.getElementById("counter").innerHTML= count;
 }
-
-userResult = document.querySelector(".user_result"),
-compResult = document.querySelector(".comp_result"),
-optionImages = document.querySelectorAll(".option_image"),
-resultImage = documment.querySelector("result_image")
 
 
