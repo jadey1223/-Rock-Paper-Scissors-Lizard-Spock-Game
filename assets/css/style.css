@@ -11,6 +11,8 @@ html {
      background-color: #CDF7F6;
 }
 
+
+
 .heading {
     font-size: 2rem;
     color: #9A94BC;
@@ -310,13 +312,13 @@ button:hover{
   .div1 {
     display: flex;
     justify-content: space-evenly;
-    /* gap: 1rem; */
+    
     }
 
     .div2 {
     display: flex;
     justify-content: space-evenly;
-    /* gap: 1rem; */
+   
    
     }
     .div3 {
