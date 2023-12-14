@@ -2,7 +2,7 @@ Rock, paper, scissor, lizard and spoke Game
  
  responsive design
 
- [View live website here] (https://jadey1223.github.io/-Rock-Paper-Scissors-Lizard-Spock-Game/)
+ * [View live website here](https://jadey1223.github.io/-Rock-Paper-Scissors-Lizard-Spock-Game/)
 
   # features
 
@@ -39,4 +39,30 @@ screenshots?
 
         This determine if the player has either won or lost against the computer-choice. The third option is a draw which you nither* win or lose which is default.
 
-    
+ # Technologies Used
+
+### Main Languages Used
+- HTML5
+- CSS3
+
+### Frameworks, Libraries & Programs Used
+
+* [Google Fonts](https://fonts.google.com/)
+
+    - Google fonts was used to import the fonts "Roboto Condense" and Sans-serif into the style.css file. These fonts were used throughout the project.
+
+* [Font Awesome](https://fontawesome.com/)
+
+    - Font Awesome was used on almost all pages throughout the website to import icons (e.g. social media icons) for UX purposes.
+
+* [GitHub](https://github.com/github)
+
+    - GitHub was used to store the project after pushing
+
+* [Balsamiq](https://balsamiq.com/)
+
+    - Balsamiq was used to create the wireframes during the design phase of the project.
+
+*   [Am I Responsive?](https://ui.dev/amiresponsive)
+
+    - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.   
