@@ -1,4 +1,4 @@
-Rock, paper, scissor, lizard and spoke Game
+# Rock, paper, scissor, lizard and spoke Game
  
  responsive design
 
@@ -76,4 +76,18 @@ Rock, paper, scissor, lizard and spoke Game
 
 *   [Am I Responsive?](https://ui.dev/amiresponsive)
 
-    - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.   
+    - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used. 
+
+    # Deployment
+
+ - This project was developed using GitPod, which was then committed and pushed to GitHub using the GitPod terminal.
+
+## Deploying on GitHub Pages
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+1. Locate the GitHub Repository.
+2. At the top of the repository, select Settings from the menu items.
+3. Scroll down the Settings page to the "Pages" section.
+4. Under "Source" click the drop-down menu labelled "None" and select "Main".
+5. Upon selection, the page will automatically refresh meaning that the website is now deployed.
+6. Scroll back down to the "Pages" section to retrieve the deployed link.  
