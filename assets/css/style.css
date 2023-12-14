@@ -53,8 +53,6 @@ section {
     opacity: 1;
   }
   
- 
-
   .user_result,
    .comp_result{
     background-color: #fff;
@@ -62,9 +60,6 @@ section {
     border-radius: 8px;
     border: solid 1px
   }
-
-
-
 
 /* result image - end */
 
@@ -120,6 +115,17 @@ button:hover{
     display: flex;
 }
 
+
+/*image display - Start*/
+#user_txt,
+#comp_text {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+/*image display - End*/
+
+
 /*modal start*/
 
     .modal {
@@ -144,6 +150,8 @@ button:hover{
         animation-name: animatetop;
         animation-duration: 0.4s
     }
+    /*modal - End*/
+
 
     /*button - start*/
     #myBtn {
@@ -212,6 +220,7 @@ button:hover{
         margin-top: 10px;
         background-color: #fff;
         border-radius: 8px;
+        padding: 1rem;
     }
     
     #your-choice {
@@ -220,12 +229,12 @@ button:hover{
         margin-top: 10px;
         background-color: #fff;
         border-radius: 8px;
+        padding: 1rem;
     }
     
     #choices {
         width: 240px;
         height: 80px;
-        /* background-color: green; */
         margin: 0 auto;
         margin-top: 10px;
     }

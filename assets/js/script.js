@@ -3,6 +3,8 @@ let count = 0;
 let myNumber;
 myNumber = 0;
 let result_ref = document.getElementById("result");
+
+// Possible out comes of each game
 let choices_object = {
     "rock" : {
         "rock" : "draw",
@@ -56,6 +58,8 @@ function checker(input){
     
     let computer_choice = choices[num];
     document.getElementById("opponent-choice").src = `assets/images/${computer_choice}.png`;
+
+    //Game results
 
     switch(choices_object[input][computer_choice]) {
         case "win" :
