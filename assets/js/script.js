@@ -46,16 +46,18 @@ let choices_object = {
         "spock" : "draw"
     }
 }
-
+// Random number generator for any of the five options
 function checker(input){
     let choices = ["rock","paper","scissor","lizard","spock"]
     let num = Math.floor(Math.random()*5);
 
     document.getElementById("comp_choice").innerHTML = `Computer choose <span>${choices[num].toUpperCase()}</span>`;
     document.getElementById("user_choice").innerHTML = `Player choose <span>${input.toUpperCase()}</span>`;
+
+    //Update images to user choices
     document.getElementById("your-choice").src = `assets/images/${input}.png`;
     
-    
+    //Update images to computer choices
     let computer_choice = choices[num];
     document.getElementById("opponent-choice").src = `assets/images/${computer_choice}.png`;
 
@@ -80,7 +82,16 @@ function checker(input){
     document.getElementById("counter").innerHTML = count++;
     document.getElementById("computer_score").innerHTML = computer_score;
     document.getElementById("user_score").innerHTML = user_score;
+
+    if (computer_score === 10){
+        alert("You lost, better luck next time.");
+    }
+    
+    if (user_score === 10){
+        alert("You Won, keep it up!");
+    }
 }
+
 
 
 //Modal//
