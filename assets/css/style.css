@@ -271,7 +271,7 @@ button:hover{
 
   /*media queries*/
 
-  @media screen and (min-width:707px) and (max-width:1500px) {
+  @media screen and (min-width:707px) and (max-width:5000px) {
 
     #myBtn
             {
@@ -329,6 +329,11 @@ button:hover{
         left: 10rem;
         top: 1rem;
         
+       }
+
+       .game_btn {
+        position: relative;
+        left: 10rem;
        }
 
   }

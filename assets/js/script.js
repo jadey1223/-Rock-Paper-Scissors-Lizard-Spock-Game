@@ -87,13 +87,14 @@ function checker(input){
 
     if (computer_score === 10){
         alert("You lost, better luck next time.");
-    }
+    } 
 
     if (user_score === 10){
         alert("You Won, keep it up!");
-}
-}
+        }
+    }
 
+ 
 
 //Modal//
 let modal = document.getElementById("myModal");
