@@ -24,7 +24,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    width: 50%;
+    
 }
 
 #score-area {
@@ -200,6 +200,14 @@ button:hover{
         margin-top: 1rem;
     }
 
+    #win_title {
+        text-align: center;
+        color: #9A94BC;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-top: 1rem;
+    }
+
     .close {
         color: #9A94BC;
         font-size: 3rem;
@@ -265,6 +273,20 @@ button:hover{
 
   @media screen and (min-width:707px) and (max-width:1500px) {
 
+    #myBtn
+            {
+        position: relative;
+        top: 8rem;
+        right: 16rem;
+    }
+
+     #reset {
+         position: relative;
+     top: 8rem;
+     right: 17rem;
+ 
+     }
+   
     .head_img {
         position: absolute;
         top: 5rem;
@@ -274,7 +296,7 @@ button:hover{
 
     section{
     position: absolute;
-    top: 29rem;
+    top: 33rem;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -314,7 +336,7 @@ button:hover{
  
 @media screen and (min-width:477px) and (max-width: 707px) {
 
-
+    
     .score-area{
         display: flex;
         flex-direction: column;
@@ -365,6 +387,10 @@ button:hover{
     margin-top: 1rem;
     position: relative;
     bottom: 13rem;
+    }
+
+    .result_image {
+        margin-top: -5rem;
     }
 }
 

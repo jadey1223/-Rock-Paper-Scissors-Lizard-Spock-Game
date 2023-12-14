@@ -83,15 +83,16 @@ function checker(input){
     document.getElementById("computer_score").innerHTML = computer_score;
     document.getElementById("user_score").innerHTML = user_score;
 
+    //If user points equal to 10 user wins. If computer points equal to 10 computer wins
+
     if (computer_score === 10){
         alert("You lost, better luck next time.");
     }
-    
+
     if (user_score === 10){
         alert("You Won, keep it up!");
-    }
 }
-
+}
 
 
 //Modal//
