@@ -2,6 +2,8 @@
  
  responsive design
 
+ ![I am responsive in different viewport](assets/images/am-i-responsive.jpeg)
+
  * [View live website here](https://jadey1223.github.io/-Rock-Paper-Scissors-Lizard-Spock-Game/)
 
   # features
@@ -78,7 +80,18 @@
 
     - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used. 
 
-    # Deployment
+## Testing
+
+- I have tested my websites on Chrome, Edge , firefox, Safari and confirm that it works.
+
+- This project looks and fuctions the way i want it to with responsive design for all viewport sizes by using the devtools device tool bar.
+
+- Html
+  - 
+
+
+
+ ## Deployment
 
  - This project was developed using GitPod, which was then committed and pushed to GitHub using the GitPod terminal.
 
@@ -91,3 +104,22 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 4. Under "Source" click the drop-down menu labelled "None" and select "Main".
 5. Upon selection, the page will automatically refresh meaning that the website is now deployed.
 6. Scroll back down to the "Pages" section to retrieve the deployed link.  
+
+### Content
+
+- All icons was taking from flaticon [icons](https://www.flaticon.com/) theses were represented as buttons.
+
+- Youtube tutorials that help me with my javascript project
+  - [youtube tutorial](https://www.youtube.com/watch?v=fIBOydve2f8&ab_channel=KennyYipCoding)
+  - [youtube tutorial](https://www.youtube.com/watch?v=RC7NbjwP3QA)
+  - [youtube tutorial](https://www.youtube.com/watch?v=Iwvf9iBP04M&t=1033s&ab_channel=CodingArtist)
+
+- W3School helped with general over-view on javascript concepts and how certain aspects worked. This was used regulary.
+
+* ### Code 
+
+    To gain a deeper understanding of coding i have used theses resources. 
+
+* [W3Schools](https://www.w3schools.com/)
+* [Stack overflow](https://stackoverflow.com/)
+* Youtube tutorials

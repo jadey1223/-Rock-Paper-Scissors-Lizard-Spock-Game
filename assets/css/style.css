@@ -273,7 +273,7 @@ button:hover{
 
   /*media queries*/
 
-  @media screen and (min-width:707px) and (max-width:5000px) {
+  @media screen and (min-width:707px) and (max-width:1700px) {
 
     #myBtn
             {
