@@ -1,6 +1,8 @@
 # Rock, paper, scissor, lizard and spoke Game
  
- responsive design
+The is a game based on a well-known TV show called big-bang theory. In this game you have 2 extra choices, with this it gives you many more possible out comes. This makes the game more enjoyable  and more challenging.
+
+
 
  ![I am responsive in different viewport](assets/images/am-i-responsive.jpeg)
 
@@ -86,19 +88,38 @@
 
 - This project looks and fuctions the way i want it to with responsive design for all viewport sizes by using the devtools device tool bar.
 
+- The javascript is working as intented. 
+
+
 - Html
   - No errors were returned when passing through the official W3C validator.
 
 - CSS
   -  No errors were found when passing through the official (Jigsaw) validator.
 
+* ### Accessibilty
 
+    - I confirm that the colors and font are easy to read and accessible by running it through lighthouse in dev tools.
+
+    - Potential reasons why performance score is so low because of large image files and file formats and embedded links like videos.
+
+    ![lighthouse score](assets/images/light-house.png)
+
+- Color scheme
+
+![color palettes](assets/images/color-scheme.png)
+
+
+
+### Unfixed bugs
+
+- There is no unfixed bugs in my website.
 
  ## Deployment
 
  - This project was developed using GitPod, which was then committed and pushed to GitHub using the GitPod terminal.
 
-## Deploying on GitHub Pages
+### Deploying on GitHub Pages
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
 1. Locate the GitHub Repository.
@@ -108,6 +129,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 5. Upon selection, the page will automatically refresh meaning that the website is now deployed.
 6. Scroll back down to the "Pages" section to retrieve the deployed link.  
 
+## Credit
 ### Content
 
 - All icons was taking from flaticon [icons](https://www.flaticon.com/) theses were represented as buttons.
@@ -126,3 +148,12 @@ To gain a deeper understanding of coding i have used theses resources.
 * [W3Schools](https://www.w3schools.com/)
 * [Stack overflow](https://stackoverflow.com/)
 * Youtube tutorials
+
+### Left out features
+
+- When the user or computer reaches 10 points music starts playing with a sound of (yay) if you win or (ah) if you lost.
+
+- When the game reaches 10 points you have to reset the game to restart. Everyting else would be disabled.
+
+- Reason not implemented
+  - I didnt have enough time to implement it. 
