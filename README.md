@@ -87,7 +87,10 @@
 - This project looks and fuctions the way i want it to with responsive design for all viewport sizes by using the devtools device tool bar.
 
 - Html
-  - 
+  - No errors were returned when passing through the official W3C validator.
+
+- CSS
+  -  No errors were found when passing through the official (Jigsaw) validator.
 
 
 
@@ -116,9 +119,9 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 - W3School helped with general over-view on javascript concepts and how certain aspects worked. This was used regulary.
 
-* ### Code 
+ ### Code 
 
-    To gain a deeper understanding of coding i have used theses resources. 
+To gain a deeper understanding of coding i have used theses resources. 
 
 * [W3Schools](https://www.w3schools.com/)
 * [Stack overflow](https://stackoverflow.com/)
