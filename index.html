@@ -10,6 +10,7 @@
 <body>
 
   <article>
+    <!--Image Title-->
     <div class="head_img">
     <img src="assets/images/rock-paper-scissors.png" id="title-img" alt="rock, paper, scissors all in one image">
   <h1 class="heading">LIZARD & SPOCK</h1></div>
@@ -42,41 +43,47 @@
            <h3 id="win_title">First to 10 WINS!</h3>
     <div class="option_images">
 
+      <!--Game choices -start-->
+
       <div class="one_two_three">
       <div class="div1">
       <button onclick="checker(`rock`)">
-        <span class="option_image">
+        <div class="option_image">
         <img src="assets/images/rock.png" id="rock" alt="rock">
         <p>Rock</p>
-    </span></button>
+        </div></button>
 
    
       <button onclick="checker(`paper`)">
-         <span class="option_image">
+         <div class="option_image">
         <img src="assets/images/paper.png" id="paper" alt="paper">
         <p>paper</p>
-    </span></button> </div>
+         </div></button> </div>
 
    <div class="div2">
       <button onclick="checker(`scissor`)">
-         <span class="option_image">
+         <div class="option_image">
         <img src="assets/images/scissor.png" id="scissor" alt="scissors">
         <p>Scissors</p>
-    </span></button>
+         </div></button>
 
    
       <button onclick="checker(`lizard`)">
-         <span class="option_image">
+         <div class="option_image">
         <img src="assets/images/lizard.png" id="lizard" alt="lizard">
        <p> Lizard</p>
-    </span></button></div>
+         </div></button></div>
 
      <div class="div3">
       <button onclick="checker(`spock`)">
-        <span class="option_image">
+        <div class="option_image">
         <img src="assets/images/spock.png" id="spock" alt="spock">
         <p>Spock</p>
-    </span></div></div></div>
+        </div></div></div></div></button>
+
+        <!--Game choices -End-->
+
+        <!--Image displayed -start-->
 
     <div class="result_image">
 
@@ -90,16 +97,19 @@
       <img src="assets/images/rock.png" id="opponent-choice"  alt="rock">
       </div>
       
+       <!--Image displayed -End-->
 
     
     </div>
    
+    <!--Text out come of your selection and computer-->
     <div class="details">
         <p id="user_choice"></p>
         <p id="comp_choice"></p>
         <p id="result"></p>
     </div>
 
+    <!--tallying of scores-->
     <div class="score-area">
         <h2>Player: <span id="user_score">0</span></h2>
         <h2 id="vs">VS</h2>
