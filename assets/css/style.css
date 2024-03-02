@@ -98,10 +98,6 @@ button:hover{
     background-color: #9A94BC;
 }
 
-.option_image.active {
-    opacity: 1;
-}
-
 .score-area {
     display: flex;
     justify-content: space-evenly;
