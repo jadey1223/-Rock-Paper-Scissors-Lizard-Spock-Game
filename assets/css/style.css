@@ -152,14 +152,13 @@ button:hover{
 
     /*button - start*/
     #myBtn {
-        margin: 0;
-        float: right;
+        
         color: #000000;
-        background-color: #fff;
+        background-color:#8fb8de;
         font-weight: bold;
         border-radius: 8px;
-        padding: 0.2rem;
-        border: solid 1.5px #9A94BC;
+        margin-right: 0.5rem;
+        border: solid 2px #9A94BC;
     }
 
     #myBtn:hover {
@@ -169,32 +168,20 @@ button:hover{
 
     #reset {
         margin-bottom: 2rem;
-        float: right;
-        background-color: #fff;
+        background-color: #8fb8de;
         font-weight: bold;
         position: relative;
-        right:  0.5rem;
         border-radius: 8px;
-        padding: 0.2rem;
-        border: solid 1.5px #9A94BC;
+        border: solid 2px #9A94BC;
     }
 
     #reset:hover {
         cursor: pointer;
         background-color: #9A94BC;
     }
-
-    .game_btn{
-        position: relative;
-        top: 1.5rem;
-        right: 1.7rem;
-        gap: 1rem;
-        background-color: #fff;
-    }
-    /*button - end*/
-
-    #intro {
-        margin-top: 1rem;
+        .control {
+            position: relative;
+            gap: 3rem;
     }
 
     #win_title {
@@ -270,52 +257,27 @@ button:hover{
 
   @media screen and (min-width:707px) and (max-width:1700px) {
 
-    #myBtn
-            {
-        position: relative;
-        top: 8rem;
-        right: 16rem;
-    }
-
-     #reset {
-         position: relative;
-     top: 8rem;
-     right: 17rem;
- 
-     }
-   
-    .head_img {
-        position: absolute;
-        top: 5rem;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
-
     section{
     position: absolute;
-    top: 33rem;
+    top: 25rem;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-  
-
   .div1 {
     display: flex;
     justify-content: space-evenly;
-    
     }
 
     .div2 {
     display: flex;
     justify-content: space-evenly;
    
-   
     }
     .div3 {
     display: flex;
     
     }
+
     #game_counter {
         color: #fff;
         position: relative;
