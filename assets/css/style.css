@@ -14,18 +14,18 @@ html {
 
 
 .heading {
-    font-size: 2rem;
-    color: #9A94BC;
-    width: 100%; 
-    text-align: center;
+  padding-top: 2rem;
+  color:#ffc783;
+  
+
 }
 
-#title-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
+#title-img {
     
+    float: left;
+    width: 3.5rem;
+    margin: 1rem;
+ 
 }
 
 #score-area {
@@ -88,9 +88,9 @@ section {
 
 /*imagebtn - start */
 button{
-   padding: 1rem;
+   padding: 0.5rem;
    border-radius: 8px;
-   border: 1px solid #9A94BC;
+   border: 2px solid #190d5b;
 }
 
 button:hover{
