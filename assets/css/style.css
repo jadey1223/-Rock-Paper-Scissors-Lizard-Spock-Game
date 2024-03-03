@@ -68,7 +68,7 @@ section {
 
 /* Game results - start*/
 .details {
-    margin-top: 3rem;
+    margin-top: -6rem;
 }
 
 .details p {
@@ -82,6 +82,7 @@ section {
     text-align: center;
     border-radius: 5px;
     font-size: 1.5rem;
+  
     
 }
 /* Game results - end*/
@@ -255,46 +256,8 @@ button:hover{
 
   /*media queries*/
 
-  @media screen and (min-width:707px) and (max-width:1700px) {
 
-    section{
-    position: absolute;
-    top: 25rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-  .div1 {
-    display: flex;
-    justify-content: space-evenly;
-    }
-
-    .div2 {
-    display: flex;
-    justify-content: space-evenly;
-   
-    }
-    .div3 {
-    display: flex;
-    
-    }
-
-    #game_counter {
-        color: #fff;
-        position: relative;
-        left: 10rem;
-        top: 1rem;
-        
-       }
-
-       .game_btn {
-        position: relative;
-        left: 10rem;
-       }
-
-  }
-
- 
-@media screen and (min-width:477px) and (max-width: 707px) {
+@media screen and (min-width:477px) and (max-width: 1700px) {
 
     
     .score-area{
@@ -391,5 +354,11 @@ button:hover{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .details {
+        display: none;
     }
 }

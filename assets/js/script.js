@@ -65,17 +65,17 @@ function checker(input){
 
     switch(choices_object[input][computer_choice]) {
         case "win" :
-            result_ref.style.cssText = "background-color: #fff; color:#00cc00";
+            result_ref.style.cssText = "color:#00cc00";
             result_ref.innerHTML = "YOU WIN";
             user_score++;
             break;
         case "lose" :
-            result_ref.style.cssText = "background-color: #fff; color:red;"
+            result_ref.style.cssText = " color:red;"
             result_ref.innerHTML = "YOU LOSE";
             computer_score++;
             break;
         default:
-            result_ref.style.cssText = "background-color: #ffff99;"
+            result_ref.style.cssText = " #ffff99;"
             result_ref.innerHTML = "DRAW";
             break;
     }
